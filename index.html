@@ -36,19 +36,56 @@
        
     </header>
 
-    <section class="imagen-inicio d-flex align-items-center d-flex justify-content-center">
-       <h1>LABORATORIO DE ANALISIS CLINICOS</h1>
+    <section class>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" >
+              <div class="carousel-item active " style="height: 80vh ;">
+                <img class="img-fluid" src="multimedia/imagen-galeria2.jpg" class="d-block w-100" alt="tubos-ensayo">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1">Laboratorio de análisis clínicos</h5>
+                  
+                </div>
+              </div>
+              <div class="carousel-item" style="height: 80vh ;">
+                <img class="img-fluid" src="multimedia/imagen-inicio2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fs-1">Laboratorio de análisis clínicos</h5>
+                  
+                </div>
+              </div>
+              <div class="carousel-item" style="height: 80vh ;">
+                <img class="img-fluid" src="multimedia/imagen-galeria3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fs-1">Laboratorio de análisis clínicos</h5>
+                  
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
     
-    <section id="nosotros">
+    <section id="nosotros" style="height: 30vh; padding: 2%;">
         <div class="container d-flex align-items-center d-flex justify-content-center">
             <div class="row">
-                <div class="col">
-                    <h2>SOBRE NOSOTROS</h2>
+                <div class="col text-justify">
+                    <h2 class="text-center">SOBRE NOSOTROS</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure facere aut velit. Magnam, maiores a. Alias, similique impedit, praesentium officia ad ab ullam doloribus maxime asperiores dolores in voluptates.</p>
                 </div>
-                <div class="col">
-                    <h2>PROFESIONALES</h2>
+                <div class="col text-justify">
+                    <h2 class="text-center">PROFESIONALES</h2>
                     <ul>
                         <li>Balbi Vaccarezza María Gracia</li>
                         <li>Analía Schumacher</li>
@@ -59,7 +96,48 @@
         </div>
     </section>
 
-    <section id="contacto"></section>
+    <section id="contacto" style="height: 70vh; padding: 2%; ">
+        <div class="container d-flex align-items-center d-flex justify-content-center">
+            <div class="row">
+                <div class="col text-justify">
+                    <h2 class="text-center">CONTACTANOS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure facere aut velit. Magnam, maiores a. Alias, similique impedit, praesentium officia ad ab ullam doloribus maxime asperiores dolores in voluptates.</p>
+                </div>
+                <div class="col">
+                    <!-- MAPA -->
+                    <iframe   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.053844475378!2d-60.9470726!3d-34.5775041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b8eb366673fced%3A0x31256694ec47993f!2sCnel.%20Borges%20848%2C%20Jun%C3%ADn%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653659271925!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid bg-blanco">
+            <div class="row">
+                <div class="col-4">
+                    <p>Coronel Borges 848 - Junín, Buenos Aires</p>
+                    <p>Telefono</p>
+                    <p>Email</p>
+                    <p>Facebook</p>
+                </div>
+
+                <div class="col-8 d-flex align-items-center">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid d-flex justify-content-end" >
+                            <div class="navbar-nav ">
+                              <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                              <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                              <a class="nav-link" href="pages/servicios.html">SERVICIOS</a>
+                              <a class="nav-link" href="pages/preguntas-frec.html">PREGUNTAS FRECUENTES</a>
+                              <a class="nav-link" href="#contacto">CONTACTO</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Conexion al servidor con las funciones de JS de Bootstrap → VA SIEMPRE DEBAJO DE TODO  -->

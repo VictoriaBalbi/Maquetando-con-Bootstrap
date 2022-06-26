@@ -2,13 +2,6 @@
     background-color: white;
 }
 
-.imagen-inicio{
-    background-image: url(multimedia/imagen-inicio.jpg);
-    background-size: cover;
-    height:83vh;
-    /*para que ocupe toda la pantalla*/
-    width: 100vw;
-}
 
 .imagen-inicio h1{
     color: white;
