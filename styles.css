@@ -1,9 +1,26 @@
 .bg-blanco{
     background-color: white;
 }
+.bg-verde{
+    background-color: #31AFB4;
+}
 
 
 .imagen-inicio h1{
     color: white;
     font-size: 4vw;
+}
+
+#contacto, #nosotros {
+
+    padding: 2%;
+}
+
+.info-footer{
+    line-height: 2%;
+    padding-top: 1%;
+}
+
+.h5-verde {
+    color: #31AFB4;
 }
