@@ -1,3 +1,6 @@
+/* fuente monserrat (font-family: 'Montserrat', sans-serif;) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 .bg-blanco{
     background-color: white;
 }
@@ -24,3 +27,9 @@
 .h5-verde {
     color: #31AFB4;
 }
+
+header, footer {
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
