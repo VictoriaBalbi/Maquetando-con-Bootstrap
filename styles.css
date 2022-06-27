@@ -1,6 +1,10 @@
 /* fuente monserrat (font-family: 'Montserrat', sans-serif;) */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+
+*{
+    scroll-behavior: smooth;
+}
 .bg-blanco{
     background-color: white;
 }
@@ -8,6 +12,11 @@
     background-color: #31AFB4;
 }
 
+html {
+    /* para referenciar el position del footer */
+    min-height: 100%;
+    position: relative;
+}
 
 .imagen-inicio h1{
     color: white;
@@ -30,6 +39,12 @@
 
 header, footer {
     font-family: 'Montserrat', sans-serif;
-   
+    width: 100%;
+}
+header{
+    border-bottom: #31AFB4 2px solid;
 }
 
+#nosotros{
+    scroll-margin-top: 15vh;
+}
