@@ -194,7 +194,7 @@ footer a {
 }
 
 /* estilo a las fuentes de los enlaces */
-/* a{
+a{
     text-decoration: none;
     color: #31AFB4;
     font-family: 'Montserrat', sans-serif;
@@ -202,4 +202,4 @@ footer a {
     text-transform: uppercase;
    
     
-} */
+}
