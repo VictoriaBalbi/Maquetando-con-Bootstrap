@@ -67,3 +67,139 @@ body{
 img{
     object-fit: cover;
 }
+
+/* PREGUNTAS FREC ------------------------------------------------- */
+
+.vtabs {
+    /* posiciono mi clase vtabs para que quede verticalmente del lado izq */
+    max-width: 80vw;
+    padding: 20px;
+    margin: 50px auto;
+
+    position: relative;
+}
+
+.vtabs input{
+    /* escondo el input para que no aparezca el check */
+    display: none;
+}
+
+.vtabs label {
+    /* label es en linea pero quiero que ocupe el 100% del ancho → display block*/
+    display: block;
+    width: 20%;
+    padding: 15px;
+    
+    /* caracteristica de la fuente */
+    font-weight: 700;
+    font-size: 1.8vw;
+    
+    font-family: 'Montserrat', sans-serif;
+       
+    color:#31AFB4;
+
+    /* resalto el borde izquierdo */
+    border-left: 5px solid #31AFB4;
+}
+
+.vtabs label:hover{
+    /* al posicionar el mouse en una label quiero que cambie de color */
+    cursor: pointer;
+}
+
+
+/* quiero que el input seleccionado se quede cambiado de color */
+.vtabs input:checked + label{
+    color:purple;
+    border-left: 5px solid purple;
+}
+
+.vtabs #tab1:checked ~ .vtab-content #content1,
+.vtabs #tab2:checked ~ .vtab-content #content2,
+.vtabs #tab3:checked ~ .vtab-content #content3,
+.vtabs #tab4:checked ~ .vtab-content #content4{
+    display: block;
+
+}
+
+.vtabs .vtab-content {
+    position:absolute;
+    top:0px;
+    width: 50%;
+    left: 25vw;
+
+    color: purple;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2vw;
+    line-height: 2.5;
+    text-align: center;
+}
+
+.vtabs .vtab-content div {
+    display: none;
+}
+/* FIN PREGUNTAS FREC --------------------------------------------- */
+
+/* footer sin BS */
+/* FOOTER -------------------------------------------------------------- */
+
+.footer-preg{
+    background-color: #31AFB4;
+    /* el ancho y alto es acorde a la pantalla → uso vh y vw */
+    /* height: fit-content; */
+    width: 100vw;
+    display: grid;
+    
+    grid-template-rows: 100%; 
+    grid-template-columns: 20% 80%;
+    align-items: center;
+ 
+    
+    /* fuente */
+    color:#FFFFFF;
+
+    
+    /* borde superior */
+    border-top:double 5px  white ;
+   
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-info {
+    
+    padding: 10px 25px;
+    font-size: 0.6vw;
+      
+}
+
+.footer-menu {
+      
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+           
+}
+
+footer a {
+    color: white;
+    font-size: 0.9vw;
+    text-decoration: none;
+}
+
+.footer-preg ul{
+    list-style: none;
+  
+}
+
+/* estilo a las fuentes de los enlaces */
+/* a{
+    text-decoration: none;
+    color: #31AFB4;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.5vw;
+    text-transform: uppercase;
+   
+    
+} */
