@@ -3,13 +3,130 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Servicios</title>
+     <!-- Conexion al servidor donde estan los estilos CSS de Bootstrap  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+     <!-- link a mi CSS -->
+     <link rel="stylesheet" href="../styles.css">
   </head>
-  <body>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias aspernatur inventore doloribus soluta minus laudantium illum dolorem, porro consequuntur nesciunt impedit distinctio ex fugit perferendis voluptatibus omnis iure iste architecto.</p>
+  <body class="bg-verde">
+    
+    <header class="position-sticky top-0 bg-blanco" style="z-index:3;">
+      <div class="container" >
+          <div class="row">
+              <div class="col d-flex flex-row justify-content-between " style="font-size: 0.8vw;" >
+                  <p>Coronel Borges 848 - Junín, Buenos Aires</p>
+                  <p>Telefono</p>
+                  <p>Email</p>
+                  <p>Facebook</p>
+              </div>
+          </div>
+      </div>
 
+      <div class="container  pb-2 ">
+          <div class="row">
+              <div class="col-4">
+                  <img class="img-fluid" src="../multimedia/logo2.jpeg" alt="logo">
+              </div>
 
+              <div class="col-8 ">
+                <nav class="navbar navbar-expand-lg">
+                  <div class="container-fluid d-flex justify-content-end ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav d-flex justify-content-evenly " style="width:100%;">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                            <a class="nav-link" href="../index.html#nosotros">NOSOTROS</a>
+                            <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                            <a class="nav-link" href="preguntas-frec.html">PREGUNTAS FRECUENTES</a>
+                            <a class="nav-link" href="../index.html#contacto">CONTACTO</a>
+                      </div>
+                    </div>
+                  </div>
+              </nav>  
+            </div>
+          </div>
+      </div>
+     
+    </header>
+
+    <section>
+      <h1 style="padding:1%">SERVICIOS</h1>
+      <!-- 1 FILA DE SERVICIOS -->
+      
+      <div class="container-fluid " style="margin-top:5%; margin-bottom: 6.5%;">
+        <div class="row d-flex align-items-center d-flex justify-content-evenly " >
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+            <div class="card margen-servicios" style="width: 20rem;">
+              <img src="../multimedia/servicios-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Análisis clínicos</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+            <div class="card margen-servicios" style="width: 20rem;">
+              <img src="../multimedia/servicios-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Test COVID-19</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+            <div class="card margen-servicios" style="width: 20rem;">
+              <img src="../multimedia/servicios-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Biología molecular</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+            <div class="card margen-servicios" style="width: 20rem;">
+              <img src="../multimedia/servicios-4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Extracciones a domicilio</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      
+    </section>
+
+    <footer>
+      <div class="container-fluid bg-blanco border-top bg-blanco">
+          <div class="row">
+              <div class="col-4 info-footer" style="font-size: 0.8vw;">
+                  <p>Coronel Borges 848 - Junín, Buenos Aires</p>
+                  <p>Telefono</p>
+                  <p>Email</p>
+                  <p>Facebook</p>
+              </div>
+
+              <div class="col-8 d-flex align-items-center d-flex justify-content-end">
+                  <nav class="navbar navbar-expand-lg">
+                      <div class="container-fluid d-flex justify-content-end" >
+                          <div class="navbar-nav ">
+                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                            <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                            <a class="nav-link" href="pages/servicios.html">SERVICIOS</a>
+                            <a class="nav-link" href="pages/preguntas-frec.html">PREGUNTAS FRECUENTES</a>
+                            <a class="nav-link" href="#contacto">CONTACTO</a>
+                          </div>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </footer>
 
 
 

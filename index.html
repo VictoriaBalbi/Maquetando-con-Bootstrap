@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    
     <header class="position-sticky top-0 bg-blanco" style="z-index:3;">
         <div class="container" >
             <div class="row">
@@ -30,15 +31,20 @@
                 </div>
 
                 <div class="col-8 ">
-                    <nav class="navbar navbar-expand-lg ">
-                        <div class="container-fluid" >
-                            <div class="navbar-nav d-flex justify-content-evenly " style="width:100%;">
-                              <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                              <a class="nav-link" href="#nosotros">NOSOTROS</a>
-                              <a class="nav-link" href="pages/servicios.html">SERVICIOS</a>
-                              <a class="nav-link" href="pages/preguntas-frec.html">PREGUNTAS FRECUENTES</a>
-                              <a class="nav-link" href="#contacto">CONTACTO</a>
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid d-flex justify-content-end ">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav  d-flex justify-content-evenly " style="width:100%;">
+                                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                                <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                                <a class="nav-link" href="pages/servicios.html">SERVICIOS</a>
+                                <a class="nav-link" href="pages/preguntas-frec.html">PREGUNTAS FRECUENTES</a>
+                                <a class="nav-link" href="#contacto">CONTACTO</a>
                             </div>
+                          </div>
                         </div>
                     </nav>
                 </div>
@@ -47,7 +53,7 @@
        
     </header>
 
-    <section>
+    <section class="imagen-inicio">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -58,21 +64,21 @@
               <div class="carousel-item active " style="height: 80vh ;">
                 <img class="img-fluid" src="multimedia/imagen-galeria2.jpg" class="d-block w-100" alt="tubos-ensayo">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="fs-1">Laboratorio de análisis clínicos</h5>
+                  <h5 class="fs-1 h5-negro fst-italic">Laboratorio de análisis clínicos</h5>
                   
                 </div>
               </div>
               <div class="carousel-item" style="height: 80vh ;">
                 <img class="img-fluid" src="multimedia/imagen-inicio2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 class="fs-1 h5-verde">Extracciones a domicilio</h5>
+                    <h5 class="fs-1 h5-verde fst-italic">Extracciones a domicilio</h5>
                   
                 </div>
               </div>
               <div class="carousel-item" style="height: 80vh ;">
                 <img class="img-fluid" src="multimedia/imagen-galeria3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 class="fs-1">Trato personalizado</h5>
+                    <h5 class="fs-1 h5-negro fst-italic">Trato personalizado</h5>
                   
                 </div>
               </div>
@@ -88,14 +94,14 @@
           </div>
     </section>
     
-    <section id="nosotros">
+    <section id="nosotros" style="height:25% ;">
         <div class="container d-flex align-items-center d-flex justify-content-center  ">
             <div class="row ">
-                <div class="col text-justify ">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-justify ">
                     <h2 class="text-center">SOBRE NOSOTROS</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure facere aut velit. Magnam, maiores a. Alias, similique impedit, praesentium officia ad ab ullam doloribus maxime asperiores dolores in voluptates.</p>
                 </div>
-                <div class="col text-justify">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-justify">
                     <h2 class="text-center">PROFESIONALES</h2>
                     <ul>
                         <li>Balbi Vaccarezza María Gracia</li>
@@ -107,16 +113,16 @@
         </div>
     </section>
 
-    <section id="contacto">
+    <section id="contacto" style="height:25% ;">
         <div class="container d-flex align-items-center d-flex justify-content-center">
             <div class="row">
-                <div class="col text-justify">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-justify">
                     <h2 class="text-center">CONTACTANOS</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum non nostrum sequi architecto alias. Dolorum maxime nisi voluptatibus ratione recusandae ad. Quibusdam labore eaque quasi sapiente ea neque modi adipisci.
                     Aut voluptates magni expedita quod libero incidunt earum non neque minus, temporibus adipisci reiciendis, illo ducimus sequi quo necessitatibus amet quam eos recusandae rem exercitationem deserunt facere id nisi. A?
                     Harum modi quae nesciunt nam corrupti quos nemo necessitatibus odit repellendus explicabo repudiandae praesentium ea consequuntur reiciendis, ad doloremque similique rerum dolores quibusdam sapiente qui? Autem assumenda rerum unde impedit?</p>
                 </div>
-                <div class="col">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <!-- MAPA -->
                     <iframe   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.053844475378!2d-60.9470726!3d-34.5775041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b8eb366673fced%3A0x31256694ec47993f!2sCnel.%20Borges%20848%2C%20Jun%C3%ADn%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653659271925!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
@@ -128,17 +134,17 @@
     <footer>
         <div class="container-fluid bg-blanco border-top bg-verde">
             <div class="row">
-                <div class="col-4 info-footer" style="font-size: 0.8vw;">
+                <div class="col-lg-4 col-md-2 col-sm-1 info-footer" style="font-size: 0.8vw;">
                     <p>Coronel Borges 848 - Junín, Buenos Aires</p>
                     <p>Telefono</p>
                     <p>Email</p>
                     <p>Facebook</p>
                 </div>
 
-                <div class="col-8 d-flex align-items-center d-flex justify-content-end">
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="container-fluid d-flex justify-content-end" >
-                            <div class="navbar-nav ">
+                <div class="col-lg-8 col-md-10 col-sm-11 d-flex align-items-center d-flex justify-content-end">
+                    <nav class="navbar d-flex flex-row navbar-expand-lg" style="width:100% ;">
+                        <div class="container-fluid d-flex justify-content-end" style="width:100% ;" >
+                            <div class="navbar-nav " style="font-size:1vw ;">
                               <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
                               <a class="nav-link" href="#nosotros">NOSOTROS</a>
                               <a class="nav-link" href="pages/servicios.html">SERVICIOS</a>

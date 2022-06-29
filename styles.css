@@ -4,18 +4,14 @@
 
 *{
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
+
 .bg-blanco{
     background-color: white;
 }
 .bg-verde{
     background-color: #31AFB4;
-}
-
-html {
-    /* para referenciar el position del footer */
-    min-height: 100%;
-    position: relative;
 }
 
 .imagen-inicio h1{
@@ -36,15 +32,38 @@ html {
 .h5-verde {
     color: #31AFB4;
 }
+.h5-negro {
+    color: black;
+}
 
 header, footer {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
 }
+
 header{
     border-bottom: #31AFB4 2px solid;
 }
 
 #nosotros{
     scroll-margin-top: 15vh;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+body{
+    width: 100vw;
+}
+
+@media only screen and (max-width:468px){
+    .imagen-inicio{
+        display: none;
+    }
+}
+
+img{
+    object-fit: cover;
 }
